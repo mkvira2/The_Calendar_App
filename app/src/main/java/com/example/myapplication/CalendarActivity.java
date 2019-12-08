@@ -55,15 +55,14 @@ public class CalendarActivity extends AppCompatActivity {
                 }
             }
         });
-        keyMood = selectedDate + "mood";
-        keySleep = selectedDate + "sleep";
 
         rateMyDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CalendarActivity.this, ButtonActivity.class);
-                intent.getStringExtra(keyMood);
-                intent.getStringExtra(keySleep);
+                intent.putExtra("mood", selectedDate + "mood");
+                intent.putExtra("sleep", selectedDate + "sleep");
+
                 startActivity(intent);
             }
         });
@@ -106,8 +105,8 @@ public class CalendarActivity extends AppCompatActivity {
     public void viewMood(View view) {
         //open an Alert Dialog with the mood and amount of sleep got on that day.
         AlertDialog.Builder quote = new AlertDialog.Builder(this);
-        quote.setMessage("Today your Mood was " + pref.getString(keyMood, "mood")
-                + " and you got " + pref.getString(keySleep, "sleep") + " of sleep.")
+        quote.setMessage("Today your Mood was " + pref.getString(selectedDate + "mood", "mood")
+                + " and you got " + pref.getString(selectedDate + "sleep", "sleep") + " of sleep.")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

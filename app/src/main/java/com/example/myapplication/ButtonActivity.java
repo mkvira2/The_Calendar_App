@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,11 +10,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CalendarView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Calendar;
 
 
 public class ButtonActivity extends AppCompatActivity {
@@ -59,7 +55,8 @@ public class ButtonActivity extends AppCompatActivity {
         getIntent().putExtra(keyMood, CalendarActivity.class);
         getIntent().getStringExtra(keyMood);
         getIntent().getStringExtra(keySleep);
-
+        keyMood = getIntent().getStringExtra("mood");
+        keySleep = getIntent().getStringExtra("sleep");
     }
     public void happyQ(View view) {
         Toast.makeText(this, "YAY! :)", Toast.LENGTH_LONG).show();
@@ -142,5 +139,4 @@ public class ButtonActivity extends AppCompatActivity {
         editor.commit();
         Toast.makeText(this, "Sleep some more next time!", Toast.LENGTH_LONG).show();
     }
-
 }
