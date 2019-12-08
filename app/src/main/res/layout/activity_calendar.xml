@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99cccc"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:background="#99cccc"
+        android:onClick="launchMenu"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="130dp"
+        android:text="@string/calendar"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_marginTop="48dp"
+        android:background="@drawable/white"
+        android:layout_marginLeft="55dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/rate"
+        android:background="@drawable/pink"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/rate_my_day"
+        android:textColor="#FFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp" />
+
+    <Button
+        android:id="@+id/pastMood"
+        android:onClick="viewMood"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/purple"
+        android:text="View My Mood"
+        android:visibility="gone" />
+
+</LinearLayout>

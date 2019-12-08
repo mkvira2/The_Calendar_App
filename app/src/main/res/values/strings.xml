@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="happy">Happy</string>
+    <string name="sad">Sad</string>
+    <string name="_10_hours">10 hours</string>
+    <string name="_5_hours">5 Hours</string>
+    <string name="_7_hours">7 hours</string>
+    <string name="amount_of_sleep">Amount of Sleep</string>
+    <string name="mood">Mood:</string>
+    <string name="rate_your_day">Rate Your Day!</string>
+    <string name="sensitive">sensitive</string>
+    <string name="mark_your_dates">Mark Your Dates</string>
+    <string name="rate_my_day">Rate My Day</string>
+    <string name="rate_you_day">Rate Your Day:</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="write_your_notes_here">Write Your Notes Here:</string>
+    <string name="write_ur_notes_here">Write Your Notes Here</string>
+    <string name="click_to_edit">click to edit</string>
+    <string name="write_notes">Write Notes</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="resources">RESOURCES</string>
+    <string name="domestic_violence_hotline_1_800_799_7233">Domestic Violence Hotline: 1-800-799-7233</string>
+    <string name="relationship_abuse_hotline_1_866_331_9474">Relationship Abuse Hotline: 1-866-331–9474</string>
+    <string name="sexual_assault_hotline_1_800_656_4673">Sexual Assault Hotline: 1-800-656-4673</string>
+    <string name="u_of_i_rape_advocacy_and_counseling_hotline_217_384_4444">U of I Rape Advocacy and Counseling Hotline: 217-384-4444</string>
+    <string name="suicide_hotline_1_800_273_8255">Suicide Hotline: 1-800-273-8255</string>
+    <string name="todo">TODO</string>
+</resources>
