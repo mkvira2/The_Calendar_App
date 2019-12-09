@@ -47,15 +47,8 @@ public class ButtonActivity extends AppCompatActivity {
         sleep = "sleep";
         editor = pref.edit();
         editor.apply();
-        getIntent().putExtra(selectedDate, CalendarActivity.class);
-        getIntent().getStringExtra(selectedDate);
-        keyMood = "TheDate+mood";
-        keySleep = "TheDate+sleep";
-        getIntent().putExtra(keyMood, CalendarActivity.class);
-        getIntent().getStringExtra(keyMood);
-        getIntent().getStringExtra(keySleep);
-        keySleep = selectedDate + "sleep";
-        keyMood = selectedDate + "mood";
+        keyMood = getIntent().getStringExtra("mood");
+        keySleep = getIntent().getStringExtra("sleep");
     }
     public void happyQ(View view) {
         Toast.makeText(this, "YAY! :)", Toast.LENGTH_LONG).show();
