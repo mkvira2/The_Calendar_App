@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Calendar;
 
 
 public class ButtonActivity extends AppCompatActivity {
@@ -47,16 +48,13 @@ public class ButtonActivity extends AppCompatActivity {
         sleep = "sleep";
         editor = pref.edit();
         editor.apply();
-        selectedDate = "date";
+        selectedDate = Calendar.getInstance().get(Calendar.MONTH) + "/" + Calendar.DAY_OF_MONTH + "/" + Calendar.YEAR;
         getIntent().putExtra(selectedDate, CalendarActivity.class);
         getIntent().getStringExtra(selectedDate);
         keyMood = "TheDate+mood";
         keySleep = "TheDate+sleep";
-        getIntent().putExtra(keyMood, CalendarActivity.class);
-        getIntent().getStringExtra(keyMood);
-        getIntent().getStringExtra(keySleep);
-        keyMood = getIntent().getStringExtra("mood");
-        keySleep = getIntent().getStringExtra("sleep");
+        keySleep = selectedDate + "sleep";
+        keyMood = selectedDate + "mood";
     }
     public void happyQ(View view) {
         Toast.makeText(this, "YAY! :)", Toast.LENGTH_LONG).show();
