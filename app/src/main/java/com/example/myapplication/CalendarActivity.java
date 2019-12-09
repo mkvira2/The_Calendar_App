@@ -38,7 +38,8 @@ public class CalendarActivity extends AppCompatActivity {
         myDate = (TextView) findViewById(R.id.myDate);
         pastMood = findViewById(R.id.pastMood);
         final Button rateMyDay = findViewById(R.id.rate);
-        selectedDate = Calendar.getInstance().get(Calendar.MONTH) + "/" + Calendar.DAY_OF_MONTH + "/" + Calendar.YEAR;
+        selectedDate = (Calendar.getInstance().get(Calendar.MONTH) + 1) + "/" + Calendar.getInstance()
+                .get(Calendar.DAY_OF_MONTH) + "/" + Calendar.getInstance().get(Calendar.YEAR);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override

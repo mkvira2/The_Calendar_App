@@ -42,17 +42,18 @@ public class ButtonActivity extends AppCompatActivity {
         tenH = findViewById(R.id.tenHours);
         sevenH = findViewById(R.id.sevenHours);
         fiveH = findViewById(R.id.fivehours);
-
         pref = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
         mood = "mood";
         sleep = "sleep";
         editor = pref.edit();
         editor.apply();
-        selectedDate = Calendar.getInstance().get(Calendar.MONTH) + "/" + Calendar.DAY_OF_MONTH + "/" + Calendar.YEAR;
         getIntent().putExtra(selectedDate, CalendarActivity.class);
         getIntent().getStringExtra(selectedDate);
         keyMood = "TheDate+mood";
         keySleep = "TheDate+sleep";
+        getIntent().putExtra(keyMood, CalendarActivity.class);
+        getIntent().getStringExtra(keyMood);
+        getIntent().getStringExtra(keySleep);
         keySleep = selectedDate + "sleep";
         keyMood = selectedDate + "mood";
     }
