@@ -28,6 +28,9 @@ public class NotesActivity extends AppCompatActivity {
         Intent intent = new Intent(NotesActivity.this, MenuActivity.class);
         startActivity(intent);
     }
+    //This code was made possible from the explanation on this website:
+    // https://www.androidauthority.com/lets-build-a-simple-text-editor-for-android-773774/
+
     public void Save(String fileName) {
         try {
             OutputStreamWriter out =
